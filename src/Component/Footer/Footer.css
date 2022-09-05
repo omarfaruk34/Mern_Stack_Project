@@ -1,0 +1,299 @@
+.footer{
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    background-color: #000A14;
+    justify-content: space-between;
+    position: relative;
+}
+.footer:before{
+    position: absolute;
+    content: "";
+    background-image: url('../../../public/footer-car.png');
+    width: 200px;
+    height: 250px;
+    right: 0;
+    top: 183px;
+    background-size: cover;
+    background-position: center;
+}
+.footer:after{
+    position: absolute;
+    content: "";
+    background-image: url('../../../public/car.png');
+    width: 200px;
+    height: 150px;
+    left: 0;
+    top: 230px;
+    background-size: cover;
+    background-position: center;
+}
+.footer-contact{
+    display: flex;
+}
+.shop-details{
+    width: 550px;
+    margin-right: 10px;
+    
+}
+.shop-details p{
+    font-size: 16px;
+    color: #fff;
+}
+.contact-us{
+   width: 250px;
+} 
+.contact-us ul li{
+   font-size: 16px;
+}
+.contact-us ul li:hover{
+    color: #fff;
+ }
+.about-us ul li a{
+    font-size: 18px;
+ }
+.about-us{
+    width: 250px;
+   
+}
+.about-us ul li:hover{
+    font-size: 18px;
+ }
+.support{
+    width: 250px;
+   
+}
+.support ul li a{
+    font-size: 18px;
+}
+.support ul li:hover{
+    color: #fff;
+}
+hr{
+    background-color: azure;
+    width: 800px;
+    height: 2px;
+    margin: auto;
+}
+
+.shop-details h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+.contact-us h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+.about-us h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+.support h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+.copyright p{
+   font-size: 20px;
+   font-weight: 300;
+}
+
+.text-muted {
+	font-size: 15px;
+}
+
+
+
+/* Responsive code */
+/* Medium Layout: 1280px. */
+/* Checking Size 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .footer{
+       width: 992px;
+    }
+    .footer:before{
+        width: 200px;
+        height: 250px;
+        right: 0;
+        top: 182px;
+    }
+    .footer:after{
+        width: 200px;
+        height: 150px;
+        left: 0;
+        top: 230px;
+    }
+    .contact{
+        
+    }
+    .shop-details{
+        width: 550px;
+        
+    }
+    .contact-us{
+       width: 240px;
+    } 
+    .about-us{
+        width: 240px;
+       
+    }
+    .support{
+        width: 240px;
+       
+    }
+    .copyright{
+    
+    }
+    hr{
+        background-color: azure;
+        width: 800px;
+        height: 2px;
+    }
+    
+    .h1weight{
+        font-weight: 400;
+        font-size: 25px;
+    }
+    .pweight{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 8px;
+        
+    }
+    
+    .h2weight{
+       font-size: 20px;
+       font-weight: 300;
+    }
+    
+}
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer{
+        width: 768px;
+       }
+    .footer::before {
+      width: 150px;
+      height: 150px;
+      top: 263px;
+    }
+    .footer::after {
+ 
+      width: 150px;
+    }
+     .footer-contact{
+        display: grid;
+        grid-template-columns: auto auto;
+     }
+  }
+  
+
+
+/* Mobile Layout: 320px. */
+/* Checing Point: 400px */
+@media only screen and (max-width: 767px) {
+    .footer{
+        width: 320px;
+    }
+  .shop-details {
+    width: 260px;
+    margin-right: 0px;
+  }
+  
+  .footer-contact {
+    width: 320px;
+    display: grid;
+  }
+  
+    .footer:after{
+        width: 100px;
+        height: 100px;
+        left: 0;
+        top: 734px;  
+    }
+    .footer::before {
+        width: 100px;
+        height: 100px;
+        right: 0;
+        top: 473px;
+    }
+    /* .footer:before{
+        width: 100px;
+        height: 100px;
+        right: 0;
+        top: 170px;
+    }
+    .footer:after{
+        width: 100px;
+        height: 100px;
+        left: 0;
+        top: 170px;
+    }
+    .contact{
+        flex-basis: 20%;
+        justify-content: space-evenly;
+    }
+   
+    .contact-us ul li{
+        font-size: 5px;   
+    
+    } 
+    .about-us ul li{
+        font-size: 5px;   
+    }
+    .support ul li{
+        font-size: 5px;   
+    }
+    .copyright{
+    
+    }
+    hr{
+        width: 200px;
+    }
+    
+    .shop-details h1{
+        font-size: 15px;
+    }
+    .shop-details p{
+        font-size: 6px;
+    }
+    .contact-us h1{
+        font-size: 10px;
+    }
+    .about-us h1{
+        font-size: 10px;
+    }
+    .support h1{
+        font-size: 10px;
+    }
+    .copyright p{
+       font-size: 5px;
+    } */
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .footer{
+        width: 480px;
+    }
+   
+    .footer-contact{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .shop-details {
+        width: auto;
+    }
+    .footer:after{
+        width: 130px;
+        height: 130px;
+        left: 0;
+        top: 404px;  
+    }
+    .footer::before {
+        width: 130px;
+        height: 130px;
+        right: 0;
+        top: 404px;
+    }
+}
